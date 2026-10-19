@@ -42,6 +42,7 @@ jobs:
         run: |
           flutter analyze
           flutter test
+          flutter test --platform=chrome test/platform_storage_web_test.dart
 
       - name: Analyze device_preview example
         working-directory: device_preview/example
